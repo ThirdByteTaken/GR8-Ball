@@ -191,6 +191,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770708383b776c64d8d731b210bab06d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsEightBall: 0
+  BallIsStriped: 0
 --- !u!54 &55751148
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -627,6 +629,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770708383b776c64d8d731b210bab06d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsEightBall: 0
+  BallIsStriped: 0
 --- !u!54 &131452443
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1117,6 +1121,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770708383b776c64d8d731b210bab06d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsEightBall: 0
+  BallIsStriped: 0
 --- !u!95 &256201406
 Animator:
   serializedVersion: 3
@@ -1330,6 +1336,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770708383b776c64d8d731b210bab06d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsEightBall: 0
+  BallIsStriped: 0
 --- !u!54 &323281865
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1572,6 +1580,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770708383b776c64d8d731b210bab06d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsEightBall: 0
+  BallIsStriped: 0
 --- !u!54 &327204278
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2091,6 +2101,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770708383b776c64d8d731b210bab06d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsEightBall: 0
+  BallIsStriped: 0
 --- !u!54 &432533277
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2333,6 +2345,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770708383b776c64d8d731b210bab06d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsEightBall: 0
+  BallIsStriped: 0
 --- !u!54 &497101719
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2671,6 +2685,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770708383b776c64d8d731b210bab06d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsEightBall: 0
+  BallIsStriped: 0
 --- !u!54 &543266122
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3105,6 +3121,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770708383b776c64d8d731b210bab06d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsEightBall: 0
+  BallIsStriped: 0
 --- !u!54 &688809815
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3347,6 +3365,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770708383b776c64d8d731b210bab06d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsEightBall: 1
+  BallIsStriped: 0
 --- !u!54 &748845544
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4059,6 +4079,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770708383b776c64d8d731b210bab06d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsEightBall: 0
+  BallIsStriped: 0
 --- !u!54 &1027768638
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4301,6 +4323,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770708383b776c64d8d731b210bab06d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsEightBall: 0
+  BallIsStriped: 0
 --- !u!54 &1029425393
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4833,6 +4857,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770708383b776c64d8d731b210bab06d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsEightBall: 0
+  BallIsStriped: 0
 --- !u!54 &1321505232
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5642,6 +5668,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770708383b776c64d8d731b210bab06d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsEightBall: 0
+  BallIsStriped: 0
 --- !u!54 &1815309581
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5884,6 +5912,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770708383b776c64d8d731b210bab06d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsEightBall: 0
+  BallIsStriped: 0
 --- !u!54 &1922864504
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6126,6 +6156,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770708383b776c64d8d731b210bab06d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsEightBall: 0
+  BallIsStriped: 0
 --- !u!54 &1966823447
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -9,6 +9,7 @@ public class Cue : MonoBehaviour
     [SerializeField]
     Transform CueHolder, CueBall;
 
+
     Rigidbody rb_CueBall;
 
     [SerializeField]
@@ -30,10 +31,11 @@ public class Cue : MonoBehaviour
         //CueHolder.transform.forward = direction;
         CueHolder.transform.LookAt(MainCamera.ScreenToWorldPoint(Input.mousePosition));
         var Rotation = CueHolder.transform.rotation;
+        Rotation = Quaternion.Euler(-90, Rotation.eulerAngles.y, Rotation.eulerAngles.z);
         CueHolder.transform.rotation = Rotation;
         if (Input.GetMouseButtonDown(0))
         {
-            rb_CueBall.AddForce(CueHolder.transform.forward * Force);
+            rb_CueBall.AddForce(-CueHolder.transform.up * Force);
         }
     }
 }

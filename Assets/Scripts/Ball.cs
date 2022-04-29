@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
+    Animator animator;
+    Rigidbody rigidbody;
     // Start is called before the first frame update
     void Start()
     {
-
+        animator = GetComponent<Animator>();
+        rigidbody = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -21,7 +24,8 @@ public class Ball : MonoBehaviour
         print("hit");
         if (collider.gameObject.CompareTag("Hole"))
         {
-            Destroy(gameObject);
+            Destroy(rigidbody);
+            animator.SetTrigger("GameOver");
         }
     }
 }

@@ -36,6 +36,7 @@ public class Cue : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             rb_CueBall.AddForce(-CueHolder.transform.up * Force);
+            CueHolder.gameObject.SetActive(false);
         }
     }
 }

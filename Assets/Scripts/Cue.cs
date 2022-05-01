@@ -15,7 +15,7 @@ public class Cue : MonoBehaviour
     [SerializeField]
     float Force;
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
         MainCamera = Camera.main;
         rb_CueBall = CueBall.GetComponent<Rigidbody>();

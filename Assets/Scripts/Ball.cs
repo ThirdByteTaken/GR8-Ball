@@ -25,9 +25,9 @@ public class Ball : MonoBehaviour
 
     Vector3 FellHolePosition;
 
-    private static int StripedBalls;
-    private static int SolidBalls;
-    private static bool IsPlayingStripes;
+    public static int StripedBalls;
+    public static int SolidBalls;
+    public static bool IsPlayingStripes;
 
     // Start is called before the first frame update
     void Start()
@@ -63,9 +63,9 @@ public class Ball : MonoBehaviour
             else
             {
                 if ((IsPlayingStripes && StripedBalls == 0) || (!IsPlayingStripes && SolidBalls == 0))
-                    print("Winner");
+                    GameManager.Instance.WinGame();
                 else
-                    print("Game Over");
+                    GameManager.Instance.LoseGame();
             }
 
             rb_Ball.velocity = Vector3.zero;

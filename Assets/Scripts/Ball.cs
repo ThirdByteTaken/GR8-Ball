@@ -16,6 +16,8 @@ public class Ball : MonoBehaviour
     [SerializeField]
     bool BallIsStriped;
 
+    Vector3 FellHolePosition;
+
     private static int StripedBalls;
     private static int SolidBalls;
     private static bool IsPlayingStripes;
@@ -57,9 +59,21 @@ public class Ball : MonoBehaviour
                     print("Game Over");
             }
 
-            Destroy(rb_Ball);
+            rb_Ball.velocity = Vector3.zero;
+            rb_Ball.MoveRotation(Quaternion.Euler(rb_Ball.rotation.eulerAngles * 0.1f));
+            transform.position = new Vector3(transform.position.x, 0, transform.position.z);
+            FellHolePosition = collider.transform.position;
+            Invoke("FallIntoHole", 0.01f);
             animator.SetTrigger("GameOver");
+
         }
+    }
+
+    public void FallIntoHole()
+    {
+        print("fall");
+        transform.position = Vector3.Lerp(transform.position, FellHolePosition, .05f);
+        Invoke("FallIntoHole", .01f);
     }
 
     void OnCollisionEnter(Collision other)

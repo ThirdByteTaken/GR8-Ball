@@ -92,9 +92,13 @@ public class Ball : MonoBehaviour
         {
             IsUncollidedCueBall = false;
             if (Random.Range(0, 1f) > 0.5) return;
+            audioSource.pitch = Random.Range(0.5f, 0.8f);
+            audioSource.volume = Random.Range(0.5f, 0.8f);
+            audioSource.Play();
         }
-        audioSource.pitch = Random.Range(0.5f, 0.8f);
-        audioSource.volume = Random.Range(0.5f, 0.8f);
-        audioSource.Play();
+        else if (other.gameObject.CompareTag("Wall"))
+        {
+            other.gameObject.GetComponent<AudioSource>().Play();
+        }
     }
 }

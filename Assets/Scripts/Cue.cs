@@ -9,7 +9,7 @@ public class Cue : MonoBehaviour
     [SerializeField]
     Transform CueHolder, CueBall;
 
-
+    Animator animator;
     Rigidbody rb_CueBall;
 
     [SerializeField]
@@ -19,6 +19,7 @@ public class Cue : MonoBehaviour
     {
         MainCamera = Camera.main;
         rb_CueBall = CueBall.GetComponent<Rigidbody>();
+        animator = GetComponent<Animator>();
     }
 
 
@@ -35,8 +36,13 @@ public class Cue : MonoBehaviour
         CueHolder.transform.rotation = Rotation;
         if (Input.GetMouseButtonDown(0))
         {
-            rb_CueBall.AddForce(-CueHolder.transform.up * Force);
-            CueHolder.gameObject.SetActive(false);
+            animator.SetTrigger("Swing");
+            Invoke("SwingCue", 5 / 6f);
         }
+    }
+    void SwingCue()
+    {
+        rb_CueBall.AddForce(-CueHolder.transform.up * Force);
+        gameObject.SetActive(false);
     }
 }

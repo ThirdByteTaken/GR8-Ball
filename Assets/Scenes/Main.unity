@@ -192,6 +192,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsEightBall: 0
+  IsCueBall: 0
+  IsUncollidedCueBall: 0
   BallIsStriped: 0
 --- !u!54 &55751148
 Rigidbody:
@@ -630,6 +632,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsEightBall: 0
+  IsCueBall: 0
+  IsUncollidedCueBall: 0
   BallIsStriped: 0
 --- !u!54 &131452443
 Rigidbody:
@@ -924,11 +928,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 242948050}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.25, z: 0}
+  m_LocalPosition: {x: 0, y: 4.250001, z: 0}
   m_LocalScale: {x: 16, y: 0.5, z: 1}
   m_Children: []
-  m_Father: {fileID: 1671510970}
-  m_RootOrder: 2
+  m_Father: {fileID: 278081991}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &242948052
 SpriteRenderer:
@@ -988,12 +992,12 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 242948050}
-  m_Material: {fileID: 13400000, guid: b3e290dfd43ec4d81b4b45b19a2bcaf5, type: 2}
+  m_Material: {fileID: 13400000, guid: e402f19e7d9eeae4cb15612d4a54716a, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 5}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.89589953, y: 1, z: 4.999999}
+  m_Center: {x: -0.05433905, y: 0, z: 0}
 --- !u!1 &256201399
 GameObject:
   m_ObjectHideFlags: 0
@@ -1122,6 +1126,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsEightBall: 0
+  IsCueBall: 1
+  IsUncollidedCueBall: 0
   BallIsStriped: 0
 --- !u!95 &256201406
 Animator:
@@ -1264,7 +1270,11 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 242948051}
+  - {fileID: 662222879}
+  - {fileID: 1362991516}
+  - {fileID: 2077526807}
   m_Father: {fileID: 1671510970}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1337,6 +1347,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsEightBall: 0
+  IsCueBall: 0
+  IsUncollidedCueBall: 0
   BallIsStriped: 0
 --- !u!54 &323281865
 Rigidbody:
@@ -1581,6 +1593,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsEightBall: 0
+  IsCueBall: 0
+  IsUncollidedCueBall: 0
   BallIsStriped: 0
 --- !u!54 &327204278
 Rigidbody:
@@ -2102,6 +2116,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsEightBall: 0
+  IsCueBall: 0
+  IsUncollidedCueBall: 0
   BallIsStriped: 0
 --- !u!54 &432533277
 Rigidbody:
@@ -2346,6 +2362,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsEightBall: 0
+  IsCueBall: 0
+  IsUncollidedCueBall: 0
   BallIsStriped: 0
 --- !u!54 &497101719
 Rigidbody:
@@ -2551,7 +2569,7 @@ Transform:
   m_LocalScale: {x: 16, y: 9, z: 0.1}
   m_Children: []
   m_Father: {fileID: 1671510970}
-  m_RootOrder: 6
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &511314778
 BoxCollider:
@@ -2686,6 +2704,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsEightBall: 0
+  IsCueBall: 0
+  IsUncollidedCueBall: 0
   BallIsStriped: 0
 --- !u!54 &543266122
 Rigidbody:
@@ -2887,11 +2907,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 662222878}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -4.25, z: 0}
+  m_LocalPosition: {x: 0, y: -4.250001, z: 0}
   m_LocalScale: {x: 16, y: 0.5, z: 1}
   m_Children: []
-  m_Father: {fileID: 1671510970}
-  m_RootOrder: 3
+  m_Father: {fileID: 278081991}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &662222880
 SpriteRenderer:
@@ -2951,7 +2971,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 662222878}
-  m_Material: {fileID: 13400000, guid: b3e290dfd43ec4d81b4b45b19a2bcaf5, type: 2}
+  m_Material: {fileID: 13400000, guid: e402f19e7d9eeae4cb15612d4a54716a, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -3122,6 +3142,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsEightBall: 0
+  IsCueBall: 0
+  IsUncollidedCueBall: 0
   BallIsStriped: 0
 --- !u!54 &688809815
 Rigidbody:
@@ -3366,6 +3388,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsEightBall: 1
+  IsCueBall: 0
+  IsUncollidedCueBall: 0
   BallIsStriped: 0
 --- !u!54 &748845544
 Rigidbody:
@@ -3963,7 +3987,7 @@ Transform:
   - {fileID: 973884664}
   - {fileID: 1520020952}
   m_Father: {fileID: 1671510970}
-  m_RootOrder: 7
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1004529842
 GameObject:
@@ -4009,7 +4033,7 @@ Transform:
   - {fileID: 1029425390}
   - {fileID: 1966823444}
   m_Father: {fileID: 1671510970}
-  m_RootOrder: 8
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1027768634
 GameObject:
@@ -4080,6 +4104,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsEightBall: 0
+  IsCueBall: 0
+  IsUncollidedCueBall: 0
   BallIsStriped: 0
 --- !u!54 &1027768638
 Rigidbody:
@@ -4324,6 +4350,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsEightBall: 0
+  IsCueBall: 0
+  IsUncollidedCueBall: 0
   BallIsStriped: 0
 --- !u!54 &1029425393
 Rigidbody:
@@ -4858,6 +4886,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsEightBall: 0
+  IsCueBall: 0
+  IsUncollidedCueBall: 0
   BallIsStriped: 0
 --- !u!54 &1321505232
 Rigidbody:
@@ -5062,8 +5092,8 @@ Transform:
   m_LocalPosition: {x: -8, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 9, z: 1}
   m_Children: []
-  m_Father: {fileID: 1671510970}
-  m_RootOrder: 4
+  m_Father: {fileID: 278081991}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1362991517
 SpriteRenderer:
@@ -5123,7 +5153,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1362991515}
-  m_Material: {fileID: 13400000, guid: b3e290dfd43ec4d81b4b45b19a2bcaf5, type: 2}
+  m_Material: {fileID: 13400000, guid: e402f19e7d9eeae4cb15612d4a54716a, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -5463,10 +5493,6 @@ Transform:
   m_Children:
   - {fileID: 1286306053}
   - {fileID: 278081991}
-  - {fileID: 242948051}
-  - {fileID: 662222879}
-  - {fileID: 1362991516}
-  - {fileID: 2077526807}
   - {fileID: 511314777}
   - {fileID: 993939278}
   - {fileID: 1004529843}
@@ -5669,6 +5695,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsEightBall: 0
+  IsCueBall: 0
+  IsUncollidedCueBall: 0
   BallIsStriped: 0
 --- !u!54 &1815309581
 Rigidbody:
@@ -5913,6 +5941,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsEightBall: 0
+  IsCueBall: 0
+  IsUncollidedCueBall: 0
   BallIsStriped: 0
 --- !u!54 &1922864504
 Rigidbody:
@@ -6157,6 +6187,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsEightBall: 0
+  IsCueBall: 0
+  IsUncollidedCueBall: 0
   BallIsStriped: 0
 --- !u!54 &1966823447
 Rigidbody:
@@ -6361,8 +6393,8 @@ Transform:
   m_LocalPosition: {x: 8, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 9, z: 1}
   m_Children: []
-  m_Father: {fileID: 1671510970}
-  m_RootOrder: 5
+  m_Father: {fileID: 278081991}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2077526808
 SpriteRenderer:
@@ -6422,7 +6454,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2077526806}
-  m_Material: {fileID: 13400000, guid: b3e290dfd43ec4d81b4b45b19a2bcaf5, type: 2}
+  m_Material: {fileID: 13400000, guid: e402f19e7d9eeae4cb15612d4a54716a, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2

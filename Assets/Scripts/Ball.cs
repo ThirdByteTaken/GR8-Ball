@@ -5,13 +5,20 @@ using UnityEngine;
 public class Ball : MonoBehaviour
 {
     Animator animator;
-    Rigidbody rb_Ball; // It doens't like us naming it rigidbody
+    Rigidbody rb_Ball; // It doens't like us naming it rigidbody doens't
     AudioSource audioSource;
+
+    SphereCollider col_Ball;
 
     const float BallSpeed = 10;
 
     [SerializeField]
     bool IsEightBall;
+
+    [SerializeField]
+    bool IsCueBall;
+    [SerializeField]
+    bool IsUncollidedCueBall; // Cue ball before hitting other balls - makes breaking look better
 
     [SerializeField]
     bool BallIsStriped;
@@ -30,12 +37,14 @@ public class Ball : MonoBehaviour
         animator = GetComponent<Animator>();
         rb_Ball = GetComponent<Rigidbody>();
         audioSource = GetComponent<AudioSource>();
+        col_Ball = GetComponent<SphereCollider>();
+        IsUncollidedCueBall = IsCueBall;
     }
 
     // Update is called once per frame
     void Update()
     {
-        rb_Ball.velocity = rb_Ball.velocity.normalized * BallSpeed;
+        rb_Ball.velocity = rb_Ball.velocity.normalized * BallSpeed * ((IsUncollidedCueBall) ? 2 : 1);
     }
 
     void OnTriggerEnter(Collider collider)
@@ -60,6 +69,7 @@ public class Ball : MonoBehaviour
             }
 
             rb_Ball.velocity = Vector3.zero;
+            rb_Ball.constraints = RigidbodyConstraints.FreezePosition;
             rb_Ball.MoveRotation(Quaternion.Euler(rb_Ball.rotation.eulerAngles * 0.1f));
             transform.position = new Vector3(transform.position.x, 0, transform.position.z);
             FellHolePosition = collider.transform.position;
@@ -78,7 +88,11 @@ public class Ball : MonoBehaviour
 
     void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.CompareTag("Ball") && Random.Range(0, 1f) > 0.5) return;
+        if (other.gameObject.CompareTag("Ball"))
+        {
+            IsUncollidedCueBall = false;
+            if (Random.Range(0, 1f) > 0.5) return;
+        }
         audioSource.pitch = Random.Range(0.5f, 0.8f);
         audioSource.volume = Random.Range(0.5f, 0.8f);
         audioSource.Play();

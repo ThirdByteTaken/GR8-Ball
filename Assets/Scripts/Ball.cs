@@ -53,7 +53,11 @@ public class Ball : MonoBehaviour
         if (collider.gameObject.CompareTag("Hole"))
         {
             collider.GetComponent<AudioSource>().Play();
-            if (StripedBalls == 7 && SolidBalls == 7) IsPlayingStripes = BallIsStriped;
+            if (StripedBalls == 7 && SolidBalls == 7) 
+            {
+                if (IsCueBall && IsUncollidedCueBall) GameManager.Instance.LoseGame();
+                else IsPlayingStripes = BallIsStriped;
+            }
 
             if (!IsEightBall)
             {

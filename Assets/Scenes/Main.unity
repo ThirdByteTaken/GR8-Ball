@@ -194,7 +194,7 @@ MonoBehaviour:
   IsEightBall: 0
   IsCueBall: 0
   IsUncollidedCueBall: 0
-  BallIsStriped: 0
+  BallIsStriped: 1
 --- !u!54 &55751148
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1411,7 +1411,7 @@ MonoBehaviour:
   IsEightBall: 0
   IsCueBall: 0
   IsUncollidedCueBall: 0
-  BallIsStriped: 0
+  BallIsStriped: 1
 --- !u!54 &323281865
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2459,7 +2459,7 @@ MonoBehaviour:
   IsEightBall: 0
   IsCueBall: 0
   IsUncollidedCueBall: 0
-  BallIsStriped: 0
+  BallIsStriped: 1
 --- !u!54 &497101719
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3293,7 +3293,7 @@ MonoBehaviour:
   WinMenu: {fileID: 1717034431}
   LoseMenu: {fileID: 1221410287}
   Everything: {fileID: 6753922329741689781}
-  pref_Everything: {fileID: 3542978984914116418, guid: de176dbbc14b043fdac52060b418232b, type: 3}
+  pref_Everything: {fileID: 5193413996850737850, guid: de176dbbc14b043fdac52060b418232b, type: 3}
 --- !u!4 &613137094
 Transform:
   m_ObjectHideFlags: 0
@@ -5129,7 +5129,7 @@ MonoBehaviour:
   IsEightBall: 0
   IsCueBall: 0
   IsUncollidedCueBall: 0
-  BallIsStriped: 0
+  BallIsStriped: 1
 --- !u!54 &1029425393
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6049,7 +6049,7 @@ MonoBehaviour:
   IsEightBall: 0
   IsCueBall: 0
   IsUncollidedCueBall: 0
-  BallIsStriped: 0
+  BallIsStriped: 1
 --- !u!54 &1321505232
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7488,7 +7488,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1221410287}
+      - m_Target: {fileID: 1717034431}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -7687,7 +7687,7 @@ MonoBehaviour:
   IsEightBall: 0
   IsCueBall: 0
   IsUncollidedCueBall: 0
-  BallIsStriped: 0
+  BallIsStriped: 1
 --- !u!54 &1815309581
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8398,7 +8398,7 @@ MonoBehaviour:
   IsEightBall: 0
   IsCueBall: 0
   IsUncollidedCueBall: 0
-  BallIsStriped: 0
+  BallIsStriped: 1
 --- !u!54 &1966823447
 Rigidbody:
   m_ObjectHideFlags: 0

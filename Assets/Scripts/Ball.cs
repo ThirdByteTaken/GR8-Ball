@@ -49,11 +49,11 @@ public class Ball : MonoBehaviour
 
     void OnTriggerEnter(Collider collider)
     {
-        print("hit");
         if (collider.gameObject.CompareTag("Hole"))
         {
+            print("Striped balls:" + StripedBalls);
             collider.GetComponent<AudioSource>().Play();
-            if (StripedBalls == 7 && SolidBalls == 7) 
+            if (StripedBalls == 7 && SolidBalls == 7)
             {
                 if (IsCueBall && IsUncollidedCueBall) GameManager.Instance.LoseGame();
                 else IsPlayingStripes = BallIsStriped;
@@ -61,12 +61,15 @@ public class Ball : MonoBehaviour
 
             if (!IsEightBall)
             {
-                if (BallIsStriped) StripedBalls--;
-                else SolidBalls--;
+                if (!IsCueBall)
+                {
+                    if (BallIsStriped) StripedBalls--;
+                    else SolidBalls--;
+                }
             }
             else
             {
-                if ((IsPlayingStripes && StripedBalls == 0) || (!IsPlayingStripes && SolidBalls == 0))
+                if ((IsPlayingStripes && StripedBalls <= 0) || (!IsPlayingStripes && SolidBalls <= 0))
                     GameManager.Instance.WinGame();
                 else
                     GameManager.Instance.LoseGame();
@@ -85,7 +88,6 @@ public class Ball : MonoBehaviour
 
     public void FallIntoHole()
     {
-        print("fall");
         transform.position = Vector3.Lerp(transform.position, FellHolePosition, .05f);
         Invoke("FallIntoHole", .01f);
     }

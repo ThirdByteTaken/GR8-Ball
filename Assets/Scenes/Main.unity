@@ -3537,9 +3537,6 @@ MonoBehaviour:
   LoseMenu: {fileID: 1221410287}
   Everything: {fileID: 6753922329741689781}
   pref_Everything: {fileID: 5193413996850737850, guid: de176dbbc14b043fdac52060b418232b, type: 3}
-<<<<<<< Updated upstream
-  BallsParent: {fileID: 1004529842}
-=======
   Solid: {fileID: 1202801421}
   Striped: {fileID: 991573388}
   BallIndictators:
@@ -3558,7 +3555,6 @@ MonoBehaviour:
   - {fileID: 1959602858}
   - {fileID: 1570288325}
   - {fileID: 1913472971}
->>>>>>> Stashed changes
 --- !u!4 &613137094
 Transform:
   m_ObjectHideFlags: 0

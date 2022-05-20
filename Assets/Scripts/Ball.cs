@@ -5,7 +5,7 @@ using UnityEngine;
 public class Ball : MonoBehaviour
 {
     Animator animator;
-    Rigidbody rb_Ball; // It doens't like us naming it rigidbody doens't
+    Rigidbody rb_Ball; // It doesn't like us naming it rigidbody 
     AudioSource audioSource;
 
     SphereCollider col_Ball;
@@ -13,17 +13,16 @@ public class Ball : MonoBehaviour
     const float BallSpeed = 10;
 
     [SerializeField]
-    bool IsEightBall;
-
-    [SerializeField]
     bool IsCueBall;
     [SerializeField]
     bool IsUncollidedCueBall; // Cue ball before hitting other balls - makes breaking look better
 
-    [SerializeField]
-    bool BallIsStriped;
+    public bool BallIsStriped;
 
     Vector3 FellHolePosition;
+
+    [SerializeField]
+    int BallNumber;
 
     public static int StripedBalls;
     public static int SolidBalls;
@@ -56,10 +55,21 @@ public class Ball : MonoBehaviour
             if (StripedBalls == 7 && SolidBalls == 7)
             {
                 if (IsCueBall && IsUncollidedCueBall) GameManager.Instance.LoseGame();
-                else IsPlayingStripes = BallIsStriped;
+                else
+                {
+                    IsPlayingStripes = BallIsStriped;
+                    if (IsPlayingStripes)
+                    {
+                        GameManager.Instance.ShowStripedIndicator();
+                    }
+                    else
+                    {
+                        GameManager.Instance.ShowSolidsIndicator();
+                    }
+                }
             }
 
-            if (!IsEightBall)
+            if (BallNumber != 8)
             {
                 if (!IsCueBall)
                 {
@@ -89,6 +99,7 @@ public class Ball : MonoBehaviour
     public void FallIntoHole()
     {
         transform.position = Vector3.Lerp(transform.position, FellHolePosition, .05f);
+        GameManager.Instance.DisableBallIndicator(BallNumber);
         Invoke("FallIntoHole", .01f);
     }
 

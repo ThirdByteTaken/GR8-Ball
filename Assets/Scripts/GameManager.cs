@@ -16,7 +16,6 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         Instance = this;
-        RandomizeBallPositions();
     }
 
     public void RandomizeBallPositions()
@@ -51,15 +50,13 @@ public class GameManager : MonoBehaviour
     {
         Destroy(Everything);
         Everything = Instantiate(pref_Everything);
+        BallsParent = Everything.transform.GetChild(1).GetChild(4).gameObject;
         Ball.StripedBalls = 7;
         Ball.SolidBalls = 7;
         Solid.SetActive(false);
         Striped.SetActive(false);
         BallIndictators.ToList().ForEach(x => x.SetActive(true));
-        for (int i = 0; i < BallIndictators.Length; i++)
-        {
-            //BallIndictators[i].transform.position = new Vector3(BallIndictators[i].transform.position.x, BallIndictators[i].transform.position.y, 6.4f - (0.8f * i));
-        }
+        RandomizeBallPositions();
     }
 
     public void ShowSolidsIndicator()

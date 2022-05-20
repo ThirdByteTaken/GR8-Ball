@@ -8,14 +8,10 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
 
     [SerializeField]
-<<<<<<< Updated upstream
-    GameObject WinMenu, LoseMenu, Everything, pref_Everything, BallsParent;
-=======
-    GameObject WinMenu, LoseMenu, Everything, pref_Everything, Solid, Striped;
+    GameObject WinMenu, LoseMenu, Everything, pref_Everything, BallsParent, Solid, Striped;
 
     [SerializeField]
     GameObject[] BallIndictators;
->>>>>>> Stashed changes
 
     void Start()
     {
@@ -59,10 +55,10 @@ public class GameManager : MonoBehaviour
         Ball.SolidBalls = 7;
         Solid.SetActive(false);
         Striped.SetActive(false);
-        BallIndictators.ToList().ForEach(x => x.SetActive(false));
+        BallIndictators.ToList().ForEach(x => x.SetActive(true));
         for (int i = 0; i < BallIndictators.Length; i++)
         {
-            BallIndictators[i].transform.position = new Vector3(BallIndictators[i].transform.position.x, BallIndictators[i].transform.position.y, 6.4f - (0.8f * i));
+            //BallIndictators[i].transform.position = new Vector3(BallIndictators[i].transform.position.x, BallIndictators[i].transform.position.y, 6.4f - (0.8f * i));
         }
     }
 
@@ -79,10 +75,10 @@ public class GameManager : MonoBehaviour
     public void DisableBallIndicator(int BallNumber)
     {
         BallIndictators[BallNumber - 1].SetActive(false);
-        var ActiveBalls/*:P*/ = BallIndictators.Where(x => x.activeInHierarchy && (x.GetComponent<Ball>().BallIsStriped == Ball.IsPlayingStripes)).ToArray();
+        var ActiveBalls/*:P*/ = BallIndictators.Where(x => x.activeInHierarchy && (x.CompareTag("StripedBall") == Ball.IsPlayingStripes)).ToArray();
         for (int i = 0; i < ActiveBalls.Length; i++)
         {
-            ActiveBalls[i].transform.localPosition = new Vector3(ActiveBalls[i].transform.localPosition.x, ActiveBalls[i].transform.localPosition.y, 3f - (0.8f * i));
+            ActiveBalls[i].transform.localPosition = new Vector3(ActiveBalls[i].transform.localPosition.x, ActiveBalls[i].transform.localPosition.y, 2f - (0.8f * i));
         }
 
     }

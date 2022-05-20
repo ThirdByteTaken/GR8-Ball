@@ -55,7 +55,7 @@ public class Ball : MonoBehaviour
             if (StripedBalls == 7 && SolidBalls == 7)
             {
                 if (IsCueBall && IsUncollidedCueBall) GameManager.Instance.LoseGame();
-                else
+                else if (!IsCueBall)
                 {
                     IsPlayingStripes = BallIsStriped;
                     if (IsPlayingStripes)

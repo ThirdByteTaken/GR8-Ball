@@ -928,7 +928,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 192689787}
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 0, y: 0, z: 3.2000003}
+  m_LocalPosition: {x: -8.5, y: 0, z: -1.2}
   m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_Children: []
   m_Father: {fileID: 1202801422}
@@ -1196,7 +1196,7 @@ MonoBehaviour:
   IsCueBall: 1
   IsUncollidedCueBall: 0
   BallIsStriped: 0
-  BallNumber: 0
+  BallNumber: 1
 --- !u!95 &256201406
 Animator:
   serializedVersion: 3
@@ -2203,7 +2203,7 @@ GameObject:
   - component: {fileID: 346841416}
   m_Layer: 0
   m_Name: Ball (10)
-  m_TagString: Ball
+  m_TagString: StripedBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2216,7 +2216,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 346841414}
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -8.5, y: 5, z: 2.2}
+  m_LocalPosition: {x: -8.5, y: 5, z: 1.2}
   m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_Children: []
   m_Father: {fileID: 991573389}
@@ -3305,7 +3305,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 554873142}
   m_LocalRotation: {x: -0.5, y: 0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: -7.5, y: 0, z: 3}
+  m_LocalPosition: {x: -8.5, y: 0, z: 3}
   m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_Children: []
   m_Father: {fileID: 1202801422}
@@ -3537,6 +3537,7 @@ MonoBehaviour:
   LoseMenu: {fileID: 1221410287}
   Everything: {fileID: 6753922329741689781}
   pref_Everything: {fileID: 5193413996850737850, guid: de176dbbc14b043fdac52060b418232b, type: 3}
+  BallsParent: {fileID: 1004529842}
   Solid: {fileID: 1202801421}
   Striped: {fileID: 991573388}
   BallIndictators:
@@ -3582,7 +3583,7 @@ GameObject:
   - component: {fileID: 648574267}
   m_Layer: 0
   m_Name: Ball (9)
-  m_TagString: Ball
+  m_TagString: StripedBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3595,7 +3596,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 648574265}
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -8.5, y: 5, z: 3}
+  m_LocalPosition: {x: -8.5, y: 5, z: 2}
   m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_Children: []
   m_Father: {fileID: 991573389}
@@ -4710,7 +4711,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 868221091}
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 0, y: 0, z: 1.6000003}
+  m_LocalPosition: {x: -8.5, y: 0, z: -2.8}
   m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_Children: []
   m_Father: {fileID: 1202801422}
@@ -4791,7 +4792,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 904806384}
   m_LocalRotation: {x: -0.5, y: 0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: -7.5, y: 5, z: 3}
+  m_LocalPosition: {x: -8.5, y: 5, z: 3}
   m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_Children: []
   m_Father: {fileID: 991573389}
@@ -5053,7 +5054,7 @@ GameObject:
   - component: {fileID: 953547776}
   m_Layer: 0
   m_Name: Ball (11)
-  m_TagString: Ball
+  m_TagString: StripedBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5066,7 +5067,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 953547774}
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -8.5, y: 5, z: 1.4}
+  m_LocalPosition: {x: -8.5, y: 5, z: 0.4}
   m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_Children: []
   m_Father: {fileID: 991573389}
@@ -5339,7 +5340,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 991573388}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.09674099, y: -2.1700194, z: 0.8373438}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 648574266}
@@ -6028,7 +6029,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1041246143}
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 0, y: 0, z: 6.4}
+  m_LocalPosition: {x: -8.5, y: 0, z: 2}
   m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_Children: []
   m_Father: {fileID: 1202801422}
@@ -6432,7 +6433,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1202801421}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.403259, y: 2.8299806, z: -2.5626564}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1041246144}
@@ -6651,7 +6652,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1265260641}
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 0, y: 0, z: 2.4}
+  m_LocalPosition: {x: -8.5, y: 0, z: -2}
   m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_Children: []
   m_Father: {fileID: 1202801422}
@@ -6732,7 +6733,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1285337016}
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 0, y: 0, z: 0.8000003}
+  m_LocalPosition: {x: -8.5, y: 0, z: -3.6}
   m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_Children: []
   m_Father: {fileID: 1202801422}
@@ -8022,7 +8023,7 @@ GameObject:
   - component: {fileID: 1570288327}
   m_Layer: 0
   m_Name: Ball (14)
-  m_TagString: Ball
+  m_TagString: StripedBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8035,7 +8036,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1570288325}
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -8.5, y: 5, z: -1}
+  m_LocalPosition: {x: -8.5, y: 5, z: -2}
   m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_Children: []
   m_Father: {fileID: 991573389}
@@ -8182,7 +8183,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1676368546}
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 0, y: 0, z: 4.8}
+  m_LocalPosition: {x: -8.5, y: 0, z: 0.4}
   m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_Children: []
   m_Father: {fileID: 1202801422}
@@ -8465,7 +8466,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1716387570}
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 0, y: 0, z: 4}
+  m_LocalPosition: {x: -8.5, y: 0, z: -0.4}
   m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_Children: []
   m_Father: {fileID: 1202801422}
@@ -9242,7 +9243,7 @@ GameObject:
   - component: {fileID: 1913472973}
   m_Layer: 0
   m_Name: Ball (15)
-  m_TagString: Ball
+  m_TagString: StripedBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9255,7 +9256,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1913472971}
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -8.5, y: 5, z: -1.8}
+  m_LocalPosition: {x: -8.5, y: 5, z: -2.8}
   m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_Children: []
   m_Father: {fileID: 991573389}
@@ -9569,7 +9570,7 @@ GameObject:
   - component: {fileID: 1959602860}
   m_Layer: 0
   m_Name: Ball (13)
-  m_TagString: Ball
+  m_TagString: StripedBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9582,7 +9583,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1959602858}
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -8.5, y: 5, z: -0.2}
+  m_LocalPosition: {x: -8.5, y: 5, z: -1.2}
   m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_Children: []
   m_Father: {fileID: 991573389}
@@ -9971,7 +9972,7 @@ GameObject:
   - component: {fileID: 2033528925}
   m_Layer: 0
   m_Name: Ball (12)
-  m_TagString: Ball
+  m_TagString: StripedBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9984,7 +9985,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2033528923}
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -8.5, y: 5, z: 0.6}
+  m_LocalPosition: {x: -8.5, y: 5, z: -0.4}
   m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_Children: []
   m_Father: {fileID: 991573389}
@@ -10258,7 +10259,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2104739983}
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 0, y: 0, z: 5.6000004}
+  m_LocalPosition: {x: -8.5, y: 0, z: 1.2}
   m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_Children: []
   m_Father: {fileID: 1202801422}

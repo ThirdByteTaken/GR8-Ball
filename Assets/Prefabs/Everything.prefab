@@ -127,10 +127,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770708383b776c64d8d731b210bab06d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsEightBall: 0
   IsCueBall: 0
   IsUncollidedCueBall: 0
   BallIsStriped: 1
+  BallNumber: 11
 --- !u!95 &1560627084133423770
 Animator:
   serializedVersion: 3
@@ -610,10 +610,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770708383b776c64d8d731b210bab06d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsEightBall: 0
   IsCueBall: 0
   IsUncollidedCueBall: 0
   BallIsStriped: 0
+  BallNumber: 3
 --- !u!95 &1560627084203040276
 Animator:
   serializedVersion: 3
@@ -1084,10 +1084,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770708383b776c64d8d731b210bab06d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsEightBall: 0
   IsCueBall: 0
   IsUncollidedCueBall: 0
   BallIsStriped: 1
+  BallNumber: 12
 --- !u!95 &1560627084362355400
 Animator:
   serializedVersion: 3
@@ -1330,10 +1330,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770708383b776c64d8d731b210bab06d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsEightBall: 0
   IsCueBall: 0
   IsUncollidedCueBall: 0
   BallIsStriped: 0
+  BallNumber: 1
 --- !u!95 &1560627084366302395
 Animator:
   serializedVersion: 3
@@ -1576,10 +1576,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770708383b776c64d8d731b210bab06d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsEightBall: 0
   IsCueBall: 1
   IsUncollidedCueBall: 0
   BallIsStriped: 0
+  BallNumber: 1
 --- !u!95 &1560627084429370289
 Animator:
   serializedVersion: 3
@@ -2099,10 +2099,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770708383b776c64d8d731b210bab06d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsEightBall: 0
   IsCueBall: 0
   IsUncollidedCueBall: 0
   BallIsStriped: 0
+  BallNumber: 4
 --- !u!95 &1560627084573064982
 Animator:
   serializedVersion: 3
@@ -2345,10 +2345,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770708383b776c64d8d731b210bab06d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsEightBall: 0
   IsCueBall: 0
   IsUncollidedCueBall: 0
   BallIsStriped: 1
+  BallNumber: 10
 --- !u!95 &1560627084631720165
 Animator:
   serializedVersion: 3
@@ -2591,10 +2591,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770708383b776c64d8d731b210bab06d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsEightBall: 0
   IsCueBall: 0
   IsUncollidedCueBall: 0
   BallIsStriped: 0
+  BallNumber: 6
 --- !u!95 &1560627084664238131
 Animator:
   serializedVersion: 3
@@ -2837,10 +2837,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770708383b776c64d8d731b210bab06d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsEightBall: 0
   IsCueBall: 0
   IsUncollidedCueBall: 0
   BallIsStriped: 1
+  BallNumber: 14
 --- !u!95 &1560627084665731552
 Animator:
   serializedVersion: 3
@@ -3553,10 +3553,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770708383b776c64d8d731b210bab06d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsEightBall: 1
   IsCueBall: 0
   IsUncollidedCueBall: 0
   BallIsStriped: 0
+  BallNumber: 8
 --- !u!95 &1560627084955683049
 Animator:
   serializedVersion: 3
@@ -3799,10 +3799,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770708383b776c64d8d731b210bab06d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsEightBall: 0
   IsCueBall: 0
   IsUncollidedCueBall: 0
   BallIsStriped: 0
+  BallNumber: 5
 --- !u!95 &1560627084996318810
 Animator:
   serializedVersion: 3
@@ -4334,10 +4334,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770708383b776c64d8d731b210bab06d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsEightBall: 0
   IsCueBall: 0
   IsUncollidedCueBall: 0
   BallIsStriped: 0
+  BallNumber: 2
 --- !u!95 &1560627085152674887
 Animator:
   serializedVersion: 3
@@ -4953,10 +4953,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770708383b776c64d8d731b210bab06d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsEightBall: 0
   IsCueBall: 0
   IsUncollidedCueBall: 0
   BallIsStriped: 1
+  BallNumber: 13
 --- !u!95 &1560627085528391873
 Animator:
   serializedVersion: 3
@@ -5858,10 +5858,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770708383b776c64d8d731b210bab06d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsEightBall: 0
   IsCueBall: 0
   IsUncollidedCueBall: 0
   BallIsStriped: 1
+  BallNumber: 15
 --- !u!95 &1560627085871556890
 Animator:
   serializedVersion: 3
@@ -6104,10 +6104,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770708383b776c64d8d731b210bab06d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsEightBall: 0
   IsCueBall: 0
   IsUncollidedCueBall: 0
   BallIsStriped: 0
+  BallNumber: 7
 --- !u!95 &1560627085995533433
 Animator:
   serializedVersion: 3
@@ -6350,10 +6350,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770708383b776c64d8d731b210bab06d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsEightBall: 0
   IsCueBall: 0
   IsUncollidedCueBall: 0
   BallIsStriped: 1
+  BallNumber: 9
 --- !u!95 &1560627086022024196
 Animator:
   serializedVersion: 3

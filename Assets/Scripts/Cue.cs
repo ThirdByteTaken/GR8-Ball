@@ -14,18 +14,32 @@ public class Cue : MonoBehaviour
 
     [SerializeField]
     float Force;
+    bool isTracking;
+
     // Start is called before the first frame update
     public void Start()
     {
         MainCamera = Camera.main;
         rb_CueBall = CueBall.GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
+        isTracking = true;
     }
 
 
 
     // Update is called once per frame
     void Update()
+    {
+        if (isTracking) UpdateCueLocation();
+        if (Input.GetMouseButtonDown(0))
+        {
+            isTracking = false;
+            animator.SetTrigger("Swing");
+            Invoke("SwingCue", 5 / 6f);
+        }
+    }
+
+    void UpdateCueLocation()
     {
         CueHolder.transform.position = CueBall.transform.position + new Vector3(0, 5, 0);
         //Vector2 direction = ((Vector2)MainCamera.ScreenToWorldPoint(Input.mousePosition) - (Vector2)CueHolder.transform.position);
@@ -34,11 +48,6 @@ public class Cue : MonoBehaviour
         var Rotation = CueHolder.transform.rotation;
         Rotation = Quaternion.Euler(-90, Rotation.eulerAngles.y, Rotation.eulerAngles.z);
         CueHolder.transform.rotation = Rotation;
-        if (Input.GetMouseButtonDown(0))
-        {
-            animator.SetTrigger("Swing");
-            Invoke("SwingCue", 5 / 6f);
-        }
     }
     void SwingCue()
     {
